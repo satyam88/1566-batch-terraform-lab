@@ -52,12 +52,3 @@ resource "aws_s3_bucket" "mybucket" {
     Environment = "prod"
   }
 }
-
-resource "aws_vpc" "myvpc001" {
-  cidr_block = var.network-range
-
-  tags = {
-    Name        = "satyam-vpc"
-    Environment = "prod"
-  }
-}
